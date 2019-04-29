@@ -1,24 +1,24 @@
 package cputProject.domain.Login;
 
 public class Login {
-    private String login;
+    private String userName;
 
     private Login(){}
 
     private Login(Builder builder){
-        this.login = builder.login;
+        this.userName = builder.userName;
     }
 
     public String getLogin(){
-        return login;
+        return userName;
     }
 
     public static class Builder{
 
-        private String login;
+        private String userName;
 
         public Builder login(String login){
-            this.login = login;
+            this.userName = userName;
             return this;
         }
 
