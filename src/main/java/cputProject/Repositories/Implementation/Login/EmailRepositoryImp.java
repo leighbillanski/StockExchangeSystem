@@ -3,17 +3,14 @@ package cputProject.Repositories.Implementation.Login;
 import cputProject.Repositories.Login.EmailRepository;
 import cputProject.domain.Login.Email;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class EmailRepositoryImp implements EmailRepository {
     private static EmailRepositoryImp repo = null;
-    private List<Email> comp;
+    private Set<Email> comp;
 
     private EmailRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static EmailRepositoryImp getRepo(){
@@ -24,7 +21,7 @@ public class EmailRepositoryImp implements EmailRepository {
     }
 
     @Override
-    public List<Email> getAll() {
+    public Set<Email> getAll() {
         return this.comp;
     }
 
@@ -44,6 +41,13 @@ public class EmailRepositoryImp implements EmailRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Email> it = comp.iterator(); it.hasNext(); ){
+            Email c = it.next();
+            if (c.equals(new Email.Builder().emailAddres(s))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

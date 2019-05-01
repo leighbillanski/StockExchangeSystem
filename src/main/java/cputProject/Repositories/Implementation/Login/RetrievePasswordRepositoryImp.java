@@ -4,6 +4,7 @@ import cputProject.Repositories.Login.RetrievePasswordRepository;
 import cputProject.domain.Login.RetreivePassword;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class RetrievePasswordRepositoryImp implements RetrievePasswordRepository {
@@ -42,6 +43,13 @@ public class RetrievePasswordRepositoryImp implements RetrievePasswordRepository
 
     @Override
     public void delete(String s) {
+        for(Iterator<RetreivePassword> it = comp.iterator(); it.hasNext(); ){
+            RetreivePassword c = it.next();
+            if (c.equals(new RetreivePassword.Builder().newPassword(s)) || c.equals(new RetreivePassword.Builder().oldPassword(s))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

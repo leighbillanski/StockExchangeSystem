@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface SharesRepository extends Repository<Shares, String> {
-    List<Shares> getAll();
+    Set<Shares> getAll();
 }

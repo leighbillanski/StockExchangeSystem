@@ -4,6 +4,7 @@ import cputProject.Repositories.Exchange.BrokerRepository;
 import cputProject.domain.Exchange.Broker;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class BrokerRepositoryImp implements BrokerRepository {
@@ -42,6 +43,13 @@ public class BrokerRepositoryImp implements BrokerRepository {
 
     @Override
     public void delete(String s) {
+
+        for(Iterator<Broker> it = comp.iterator(); it.hasNext(); ){
+            Broker c = it.next();
+            if (c.equals(new Broker.Builder().fName(s)) || c.equals(new Broker.Builder().lName(s))){
+                this.comp.remove(c);
+            }
+        }
 
     }
 

@@ -4,6 +4,7 @@ import cputProject.Repositories.Login.UserNameRepository;
 import cputProject.domain.Login.UserName;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class UserNameRepositoryImp implements UserNameRepository {
@@ -42,6 +43,13 @@ public class UserNameRepositoryImp implements UserNameRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<UserName> it = comp.iterator(); it.hasNext(); ){
+            UserName c = it.next();
+            if (c.equals(new UserName.Builder().userName(s)) || c.equals(new UserName.Builder().userId(s))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

@@ -3,17 +3,14 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.OrderRepository;
 import cputProject.domain.Exchange.Order;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class OrderRepositoryImp implements OrderRepository {
     private static OrderRepositoryImp repo = null;
-    private List<Order> comp;
+    private Set<Order> comp;
 
     private OrderRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static OrderRepositoryImp getRepo(){
@@ -24,7 +21,7 @@ public class OrderRepositoryImp implements OrderRepository {
     }
 
     @Override
-    public List<Order> getAll() {
+    public Set<Order> getAll() {
         return this.comp;
     }
 
@@ -44,6 +41,12 @@ public class OrderRepositoryImp implements OrderRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Order> it = comp.iterator(); it.hasNext(); ){
+            Order c = it.next();
+            if (c.equals(new Order.Builder().order(s))){
+                this.comp.remove(c);
+            }
+        }
 
     }
 

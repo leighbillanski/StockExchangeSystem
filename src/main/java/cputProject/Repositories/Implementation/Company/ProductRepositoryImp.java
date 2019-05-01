@@ -4,6 +4,7 @@ import cputProject.Repositories.Company.ProductRepository;
 import cputProject.domain.Company.Product;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class ProductRepositoryImp implements ProductRepository {
@@ -42,6 +43,12 @@ public class ProductRepositoryImp implements ProductRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Product> it = comp.iterator(); it.hasNext(); ){
+            Product c = it.next();
+            if (c.equals(new Product.Builder().productName(s))){
+                this.comp.remove(c);
+            }
+        }
 
     }
 

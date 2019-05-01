@@ -4,6 +4,7 @@ import cputProject.Repositories.Login.RegisterRepository;
 import cputProject.domain.Login.Register;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class RegisterRepositoryImp implements RegisterRepository {
@@ -42,6 +43,13 @@ public class RegisterRepositoryImp implements RegisterRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Register> it = comp.iterator(); it.hasNext(); ){
+            Register c = it.next();
+            if (c.equals(new Register.Builder().email(s))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

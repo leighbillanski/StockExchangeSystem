@@ -4,6 +4,7 @@ import cputProject.Repositories.Exchange.StockRepository;
 import cputProject.domain.Exchange.Stock;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class StockRepositoryImp implements StockRepository {
@@ -42,6 +43,13 @@ public class StockRepositoryImp implements StockRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Stock> it = comp.iterator(); it.hasNext(); ){
+            Stock c = it.next();
+            if (c.equals(new Stock.Builder().stockId(s))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

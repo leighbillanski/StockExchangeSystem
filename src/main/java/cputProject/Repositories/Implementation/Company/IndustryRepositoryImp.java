@@ -3,17 +3,14 @@ package cputProject.Repositories.Implementation.Company;
 import cputProject.Repositories.Company.IndustryRepository;
 import cputProject.domain.Company.Industry;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class IndustryRepositoryImp implements IndustryRepository {
     private static IndustryRepositoryImp repo = null;
-    private List<Industry> comp;
+    private Set<Industry> comp;
 
     private IndustryRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static IndustryRepositoryImp getRepo(){
@@ -24,7 +21,7 @@ public class IndustryRepositoryImp implements IndustryRepository {
     }
 
     @Override
-    public List<Industry> getAll() {
+    public Set<Industry> getAll() {
         return this.comp;
     }
 
@@ -44,6 +41,12 @@ public class IndustryRepositoryImp implements IndustryRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Industry> it = comp.iterator(); it.hasNext(); ){
+            Industry c = it.next();
+            if (c.equals(new Industry.Builder().type(s))){
+                this.comp.remove(c);
+            }
+        }
 
     }
 

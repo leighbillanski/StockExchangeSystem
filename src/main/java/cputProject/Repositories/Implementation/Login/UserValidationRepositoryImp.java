@@ -3,17 +3,14 @@ package cputProject.Repositories.Implementation.Login;
 import cputProject.Repositories.Login.UserValidationRepository;
 import cputProject.domain.Login.UserValidation;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class UserValidationRepositoryImp implements UserValidationRepository {
     private static UserValidationRepositoryImp repo = null;
-    private List<UserValidation> comp;
+    private Set<UserValidation> comp;
 
     private UserValidationRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static UserValidationRepositoryImp getRepo(){
@@ -24,7 +21,7 @@ public class UserValidationRepositoryImp implements UserValidationRepository {
     }
 
     @Override
-    public List<UserValidation> getAll() {
+    public Set<UserValidation> getAll() {
         return this.comp;
     }
 
@@ -44,6 +41,13 @@ public class UserValidationRepositoryImp implements UserValidationRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<UserValidation> it = comp.iterator(); it.hasNext(); ){
+            UserValidation c = it.next();
+            if (c.equals(new UserValidation.Builder().message(s))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

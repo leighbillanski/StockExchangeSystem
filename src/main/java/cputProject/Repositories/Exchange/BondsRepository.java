@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface BondsRepository extends Repository<Bonds, String> {
-    List<Bonds> getAll();
+    Set<Bonds> getAll();
 }

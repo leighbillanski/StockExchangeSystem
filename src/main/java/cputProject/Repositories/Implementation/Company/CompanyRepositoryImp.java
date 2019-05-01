@@ -4,6 +4,7 @@ import cputProject.Repositories.Company.CompanyRepository;
 import cputProject.domain.Company.Company;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class CompanyRepositoryImp implements CompanyRepository {
@@ -43,7 +44,12 @@ public class CompanyRepositoryImp implements CompanyRepository {
 
     @Override
     public void delete(String s) {
-
+        for(Iterator<Company> it = comp.iterator(); it.hasNext(); ){
+            Company c = it.next();
+            if (c.equals(new Company.Builder().name(s))){
+                this.comp.remove(c);
+            }
+        }
     }
 
     @Override

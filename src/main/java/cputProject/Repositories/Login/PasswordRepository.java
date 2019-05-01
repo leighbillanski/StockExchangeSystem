@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface PasswordRepository extends Repository<Password, String> {
-    List<Password> getAll();
+    Set<Password> getAll();
 }

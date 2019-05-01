@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface LoginRepository extends Repository<Login, String> {
-    List<Login> getAll();
+    Set<Login> getAll();
 }

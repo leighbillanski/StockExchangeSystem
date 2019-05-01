@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface TransactionRepository extends Repository<Transaction, String> {
-    List<Transaction> getAll();
+    Set<Transaction> getAll();
 }

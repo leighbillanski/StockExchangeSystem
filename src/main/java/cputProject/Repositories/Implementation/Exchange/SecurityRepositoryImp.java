@@ -3,17 +3,14 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.SecurityRepository;
 import cputProject.domain.Exchange.Security;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class SecurityRepositoryImp implements SecurityRepository {
     private static SecurityRepositoryImp repo = null;
-    private List<Security> comp;
+    private Set<Security> comp;
 
     private SecurityRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static SecurityRepositoryImp getRepo(){
@@ -24,7 +21,7 @@ public class SecurityRepositoryImp implements SecurityRepository {
     }
 
     @Override
-    public List<Security> getAll() {
+    public Set<Security> getAll() {
         return this.comp;
     }
 
@@ -44,6 +41,12 @@ public class SecurityRepositoryImp implements SecurityRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Security> it = comp.iterator(); it.hasNext(); ){
+            Security c = it.next();
+            if (c.equals(new Security.Builder().sec(s))){
+                this.comp.remove(c);
+            }
+        }
 
     }
 

@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface IndustryRepository extends Repository<Industry, String> {
-    List<Industry> getAll();
+    Set<Industry> getAll();
 }

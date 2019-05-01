@@ -4,17 +4,14 @@ import cputProject.Repositories.Exchange.StockAvailableRepository;
 import cputProject.domain.Exchange.Stock;
 import cputProject.domain.Exchange.StockAvailable;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class StockAvailableRepositoryImp implements StockAvailableRepository {
     private static StockAvailableRepositoryImp repo = null;
-    private List<StockAvailable> comp;
+    private Set<StockAvailable> comp;
 
     private StockAvailableRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static StockAvailableRepositoryImp getRepo(){
@@ -25,7 +22,7 @@ public class StockAvailableRepositoryImp implements StockAvailableRepository {
     }
 
     @Override
-    public List<StockAvailable> getAll() {
+    public Set<StockAvailable> getAll() {
         return this.comp;
     }
 
@@ -45,6 +42,13 @@ public class StockAvailableRepositoryImp implements StockAvailableRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<StockAvailable> it = comp.iterator(); it.hasNext(); ){
+            StockAvailable c = it.next();
+            if (c.equals(new StockAvailable.Builder().stock(Double.parseDouble(s)))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

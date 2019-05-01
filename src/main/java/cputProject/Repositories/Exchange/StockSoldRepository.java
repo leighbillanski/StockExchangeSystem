@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface StockSoldRepository extends Repository<StockSold, String> {
-    List<StockSold> getAll();
+    Set<StockSold> getAll();
 }

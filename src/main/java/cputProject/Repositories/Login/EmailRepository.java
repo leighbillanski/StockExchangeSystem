@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface EmailRepository extends Repository<Email, String> {
-    List<Email> getAll();
+    Set<Email> getAll();
 }

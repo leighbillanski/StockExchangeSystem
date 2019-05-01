@@ -5,6 +5,7 @@ import cputProject.domain.Company.Company;
 import cputProject.domain.Company.Country;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class CountryRepositoryImp implements CountryRepository {
@@ -44,6 +45,12 @@ public class CountryRepositoryImp implements CountryRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Country> it = con.iterator(); it.hasNext(); ){
+            Country c = it.next();
+            if (c.equals(new Country.Builder().countryName(s))){
+                this.con.remove(c);
+            }
+        }
 
     }
 

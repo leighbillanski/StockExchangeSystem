@@ -3,15 +3,14 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.StockPriceRepository;
 import cputProject.domain.Exchange.StockPrice;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class StockPriceRepositoryImp implements StockPriceRepository {
     private static StockPriceRepositoryImp repo = null;
-    private List<StockPrice> comp;
+    private Set<StockPrice> comp;
 
     private StockPriceRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static StockPriceRepositoryImp getRepo(){
@@ -22,7 +21,7 @@ public class StockPriceRepositoryImp implements StockPriceRepository {
     }
 
     @Override
-    public List<StockPrice> getAll() {
+    public Set<StockPrice> getAll() {
         return this.comp;
     }
 
@@ -42,6 +41,13 @@ public class StockPriceRepositoryImp implements StockPriceRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<StockPrice> it = comp.iterator(); it.hasNext(); ){
+            StockPrice c = it.next();
+            if (c.equals(new StockPrice.Builder().price(Double.parseDouble(s)))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

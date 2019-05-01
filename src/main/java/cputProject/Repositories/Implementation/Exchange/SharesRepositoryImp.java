@@ -3,17 +3,14 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.SharesRepository;
 import cputProject.domain.Exchange.Shares;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class SharesRepositoryImp implements SharesRepository {
     private static SharesRepositoryImp repo = null;
-    private List<Shares> comp;
+    private Set<Shares> comp;
 
     private SharesRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static SharesRepositoryImp getRepo(){
@@ -24,7 +21,7 @@ public class SharesRepositoryImp implements SharesRepository {
     }
 
     @Override
-    public List<Shares> getAll() {
+    public Set<Shares> getAll() {
         return this.comp;
     }
 
@@ -44,6 +41,13 @@ public class SharesRepositoryImp implements SharesRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Shares> it = comp.iterator(); it.hasNext(); ){
+            Shares c = it.next();
+            if (c.equals(new Shares.Builder().order(Double.parseDouble(s)))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

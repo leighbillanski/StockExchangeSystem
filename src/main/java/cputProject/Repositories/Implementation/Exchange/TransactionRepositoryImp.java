@@ -3,17 +3,14 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.TransactionRepository;
 import cputProject.domain.Exchange.Transaction;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class TransactionRepositoryImp implements TransactionRepository {
     private static TransactionRepositoryImp repo = null;
-    private List<Transaction> comp;
+    private Set<Transaction> comp;
 
     private TransactionRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static TransactionRepositoryImp getRepo(){
@@ -24,7 +21,7 @@ public class TransactionRepositoryImp implements TransactionRepository {
     }
 
     @Override
-    public List<Transaction> getAll() {
+    public Set<Transaction> getAll() {
         return this.comp;
     }
 
@@ -44,6 +41,13 @@ public class TransactionRepositoryImp implements TransactionRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Transaction> it = comp.iterator(); it.hasNext(); ){
+            Transaction c = it.next();
+            if (c.equals(new Transaction.Builder().desc(s))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

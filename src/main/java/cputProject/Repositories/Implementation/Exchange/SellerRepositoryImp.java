@@ -4,6 +4,7 @@ import cputProject.Repositories.Exchange.SellerRepository;
 import cputProject.domain.Exchange.Seller;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class SellerRepositoryImp implements SellerRepository {
@@ -42,6 +43,13 @@ public class SellerRepositoryImp implements SellerRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Seller> it = comp.iterator(); it.hasNext(); ){
+            Seller c = it.next();
+            if (c.equals(new Seller.Builder().fName(s)) || c.equals(new Seller.Builder().lName(s))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

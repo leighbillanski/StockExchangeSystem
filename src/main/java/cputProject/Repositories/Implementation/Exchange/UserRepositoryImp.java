@@ -4,6 +4,7 @@ import cputProject.Repositories.Exchange.UserRepository;
 import cputProject.domain.Exchange.User;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class UserRepositoryImp implements UserRepository {
@@ -42,6 +43,13 @@ public class UserRepositoryImp implements UserRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<User> it = comp.iterator(); it.hasNext(); ){
+            User c = it.next();
+            if (c.equals(new User.Builder().fName(s)) || c.equals(new User.Builder().lName(s))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

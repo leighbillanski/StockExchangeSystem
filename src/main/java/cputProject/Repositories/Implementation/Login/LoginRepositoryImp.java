@@ -3,17 +3,14 @@ package cputProject.Repositories.Implementation.Login;
 import cputProject.Repositories.Login.LoginRepository;
 import cputProject.domain.Login.Login;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class LoginRepositoryImp implements LoginRepository {
     private static LoginRepositoryImp repo = null;
-    private List<Login> comp;
+    private Set<Login> comp;
 
     private LoginRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static LoginRepositoryImp getRepo(){
@@ -24,7 +21,7 @@ public class LoginRepositoryImp implements LoginRepository {
     }
 
     @Override
-    public List<Login> getAll() {
+    public Set<Login> getAll() {
         return this.comp;
     }
 
@@ -44,6 +41,13 @@ public class LoginRepositoryImp implements LoginRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Login> it = comp.iterator(); it.hasNext(); ){
+            Login c = it.next();
+            if (c.equals(new Login.Builder().login(s))){
+                this.comp.remove(c);
+            }
+        }
+
 
     }
 

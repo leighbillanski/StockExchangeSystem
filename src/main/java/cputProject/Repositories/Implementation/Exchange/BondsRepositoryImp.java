@@ -3,17 +3,14 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.BondsRepository;
 import cputProject.domain.Exchange.Bonds;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class BondsRepositoryImp implements BondsRepository {
     private static BondsRepositoryImp repo = null;
-    private List<Bonds> comp;
+    private Set<Bonds> comp;
 
     private BondsRepositoryImp(){
-        this.comp = new ArrayList<>();
+        this.comp = new HashSet<>();
     }
 
     public static BondsRepositoryImp getRepo(){
@@ -24,7 +21,7 @@ public class BondsRepositoryImp implements BondsRepository {
     }
 
     @Override
-    public List<Bonds> getAll() {
+    public Set<Bonds> getAll() {
         return this.comp;
     }
 
@@ -44,6 +41,12 @@ public class BondsRepositoryImp implements BondsRepository {
 
     @Override
     public void delete(String s) {
+        for(Iterator<Bonds> it = comp.iterator(); it.hasNext(); ){
+            Bonds c = it.next();
+            if (c.equals(new Bonds.Builder().bond(s))){
+                this.comp.remove(c);
+            }
+        }
 
     }
 
