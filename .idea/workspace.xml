@@ -1,279 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03a2bc95-1d5d-419a-be13-35d9f37504bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cputProject/service/Company/IndustryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cputProject/service/Implementation/Company/CountryServiceImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Company/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Company/CompanyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Company/CountryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Company/CountryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Company/CompanyRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Company/CompanyRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Company/CountryRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Company/CountryRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Company/IndustryRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Company/IndustryRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Company/ProductRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Company/ProductRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/BondsRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/BondsRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/BrokerRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/BrokerRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/BuyerRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/BuyerRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/OrderRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/OrderRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/SecurityRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/SecurityRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/SellerRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/SellerRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/SharesRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/SharesRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/StockAvailableRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/StockAvailableRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/StockPriceRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/StockPriceRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/StockRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/StockRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/StockSoldRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/StockSoldRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/TransactionRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/TransactionRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/UserRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Exchange/UserRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/EmailRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/EmailRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/LoginRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/LoginRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/PasswordRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/PasswordRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/RegisterRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/RegisterRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/RetrievePasswordRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/RetrievePasswordRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/UserNameRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/UserNameRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/UserValidationRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Implementation/Login/UserValidationRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/Repositories/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Company/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Company/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Company/Industry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Company/Industry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Bonds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Bonds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Broker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Buyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Security.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Security.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Seller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Shares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/StockAvailable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/StockAvailable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/StockPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/StockPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/StockSold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/StockSold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Exchange/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Login/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Login/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Login/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Login/Password.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/domain/Login/UserValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/domain/Login/UserValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Company/IndustryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Company/IndustryFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/BondsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/BondsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/BrokerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/BrokerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/BuyerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/BuyerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/OrderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/OrderFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/SecurityFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/SecurityFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/SellerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/SellerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/SharesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/SharesFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/StockAvailableFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/StockAvailableFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/StockPriceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/StockPriceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/StockSoldFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/StockSoldFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/TransactionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/TransactionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Exchange/UserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Login/EmailFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Login/EmailFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Login/LoginFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Login/LoginFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Login/PasswordFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Login/PasswordFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/factory/Login/UserValidationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/factory/Login/UserValidationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/service/Company/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/service/Company/CompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cputProject/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cputProject/service/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Company/CompanyRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Company/CompanyRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Company/CountryRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Company/CountryRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Company/IndustryRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Company/IndustryRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Company/ProductRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Company/ProductRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/BondsRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/BondsRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/BrokerRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/BrokerRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/BuyerRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/BuyerRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/OrderRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/OrderRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/SecurityRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/SecurityRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/SellerRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/SellerRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/SharesRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/SharesRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/StockAvailableRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/StockAvailableRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/StockPriceRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/StockPriceRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/StockRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/StockRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/StockSoldRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/StockSoldRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/TransactionRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/TransactionRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/UserRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/UserRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/EmailRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/EmailRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/LoginRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/LoginRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/PasswordRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/PasswordRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/RegisterRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/RegisterRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/RetrievePasswordRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/RetrievePasswordRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/UserNameRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/UserNameRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/UserValidationRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/UserValidationRepositoryImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/factory/Login/LoginFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/factory/Login/LoginFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Project.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Company/CompanyRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Company/CompanyRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Company/CountryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Company/CountryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Company/IndustryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Company/IndustryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Company/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Company/ProductRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/BondsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/BondsRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/BrokerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/BrokerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/BuyerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/BuyerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/OrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/SecurityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/SecurityRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/SellerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/SellerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/SharesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/SharesRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/StockAvailableRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/StockAvailableRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/StockPriceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/StockPriceRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/StockRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/StockRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/StockSoldRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/StockSoldRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/TransactionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/TransactionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Exchange/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Company/CompanyRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Company/CompanyRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Company/CountryRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Company/CountryRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Company/IndustryRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Company/IndustryRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Company/ProductRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Company/ProductRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/BondsRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/BondsRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/BrokerRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/BrokerRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/BuyerRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/BuyerRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/OrderRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/OrderRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/SecurityRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/SecurityRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/SellerRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/SellerRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/SharesRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/SharesRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/StockAvailableRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/StockAvailableRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/StockPriceRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/StockPriceRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/StockRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/StockRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/StockSoldRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/StockSoldRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/TransactionRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/TransactionRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/UserRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Exchange/UserRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/EmailRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/EmailRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/LoginRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/LoginRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/PasswordRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/PasswordRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/RegisterRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/RegisterRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/RetrievePasswordRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/RetrievePasswordRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/UserNameRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/UserNameRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/UserValidationRepositoryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Implementation/Login/UserValidationRepositoryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/EmailRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/EmailRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/LoginRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/LoginRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/PasswordRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/PasswordRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/RegisterRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/RegisterRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/RetrievePasswordRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/RetrievePasswordRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/UserNameRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/UserNameRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/UserValidationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Login/UserValidationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/Repositories/Repository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Company$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Company$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Company$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Company$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Country$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Country$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Country$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Country$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Country.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Industry$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Industry$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Industry$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Industry$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Industry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Industry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Product$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Product$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Product$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Product$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Company/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Bonds$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Bonds$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Bonds$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Bonds$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Bonds.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Bonds.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Broker$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Broker$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Broker$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Broker$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Broker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Broker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Buyer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Buyer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Buyer$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Buyer$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Buyer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Buyer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Order$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Order$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Order$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Order$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Security$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Security$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Security$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Security$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Security.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Security.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Seller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Seller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Seller$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Seller$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Seller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Seller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Shares$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Shares$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Shares$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Shares$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Shares.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Shares.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Stock$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Stock$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Stock$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Stock$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Stock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockAvailable$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockAvailable$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockAvailable$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockAvailable$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockAvailable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockAvailable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockPrice$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockPrice$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockPrice$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockPrice$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockPrice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockPrice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockSold$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockSold$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockSold$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockSold$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockSold.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/StockSold.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Transaction$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Transaction$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Transaction$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Transaction$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/User$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/User$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/User$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/User$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Exchange/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Email$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Email$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Email$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Email$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Email.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Email.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Login$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Login$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Login$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Password$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Password$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Password$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Password$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Password.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Password.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Register$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Register$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Register$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Register$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/Register.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/RetreivePassword$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/RetreivePassword$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/RetreivePassword$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/RetreivePassword$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/RetreivePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/RetreivePassword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserName$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserName$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserName$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserName$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserValidation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserValidation$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserValidation$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserValidation$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/domain/Login/UserValidation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Company/CompanyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Company/CompanyFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Company/CountryFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Company/CountryFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Company/IndustryFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Company/IndustryFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Company/ProductFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Company/ProductFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/BondsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/BondsFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/BrokerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/BrokerFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/BuyerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/BuyerFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/OrderFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/OrderFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/SecurityFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/SecurityFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/SellerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/SellerFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/SharesFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/SharesFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/StockAvailableFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/StockAvailableFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/StockFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/StockFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/StockPriceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/StockPriceFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/StockSoldFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/StockSoldFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/TransactionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/TransactionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/UserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Exchange/UserFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/EmailFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/EmailFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/LoginFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/LoginFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/PasswordFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/PasswordFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/RegisterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/RegisterFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/RetreivePasswordFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/RetreivePasswordFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/UserNameFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/UserNameFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/UserValidationFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/factory/Login/UserValidationFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cputProject/util/Misc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cputProject/util/Misc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Project.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/Repositories/Implementation/Company/CompanyRepositoryImpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/Repositories/Implementation/Company/CompanyRepositoryImpTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/Repositories/Implementation/Exchange/BondsRepositoryImpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/Repositories/Implementation/Exchange/BondsRepositoryImpTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/Repositories/Implementation/Login/EmailRepositoryImpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/Repositories/Implementation/Login/EmailRepositoryImpTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Company/CompanyFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Company/CompanyFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Company/CountryFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Company/CountryFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Company/IndustryFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Company/IndustryFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Company/ProductFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Company/ProductFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/BondsFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/BondsFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/BrokerFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/BrokerFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/BuyerFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/BuyerFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/OrderFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/OrderFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/SecurityFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/SecurityFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/SellerFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/SellerFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/SharesFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/SharesFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/StockAvailableFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/StockAvailableFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/StockFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/StockFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/StockPriceFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/StockPriceFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/StockSoldFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/StockSoldFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/TransactionFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/TransactionFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/UserFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Exchange/UserFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/EmailFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/EmailFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/LoginFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/LoginFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/PasswordFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/PasswordFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/RegisterFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/RegisterFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/RetreivePasswordFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/RetreivePasswordFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/UserNameFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/UserNameFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/UserValidationFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cputProject/factory/Login/UserValidationFactoryTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="03a2bc95-1d5d-419a-be13-35d9f37504bd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -284,15 +12,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/OrderRepositoryImpTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/SecurityRepositoryImpTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -365,11 +84,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/UserNameRepositoryImpTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -391,7 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Exchange/StockAvailableServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Exchange/StockPriceServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Exchange/StockServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Exchange/StockSoldServiceImp.java" />
@@ -442,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/LoginRepositoryImpTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/RegisterRepositoryImpTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/UserNameRepositoryImpTest.java" />
+        <option value="$PROJECT_DIR$/src/Resources/application.properties" />
       </list>
     </option>
   </component>
@@ -458,7 +186,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="697" />
@@ -536,6 +264,15 @@
               <item name="cputProject" type="462c0819:PsiDirectoryNode" />
               <item name="Implementation" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="StockExchangeSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StockExchangeSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cputProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Implementation" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -544,7 +281,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558504809284" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558505288293" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -731,6 +468,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -789,16 +527,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Login/LoginServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Login/PasswordServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1176,6 +904,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
         </state>
       </provider>
     </entry>
