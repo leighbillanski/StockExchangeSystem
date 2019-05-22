@@ -3,14 +3,19 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.SecurityRepository;
 import cputProject.domain.Exchange.Security;
 
-import java.util.*;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemorysec")
 public class SecurityRepositoryImp implements SecurityRepository {
     private static SecurityRepositoryImp repo = null;
-    private Set<Security> comp;
+    private Map<String,Security> comp;
 
     private SecurityRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static SecurityRepositoryImp getRepo(){
@@ -22,36 +27,31 @@ public class SecurityRepositoryImp implements SecurityRepository {
 
     @Override
     public Set<Security> getAll() {
-        return this.comp;
+        Collection<Security> students = this.comp.values();
+        Set<Security> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Security create(Security company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public Security update(Security company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Security> it = comp.iterator(); it.hasNext(); ){
-            Security c = it.next();
-            if (c.equals(new Security.Builder().sec(s))){
-                this.comp.remove(c);
-            }
-        }
-
+        this.comp.remove(s);
     }
 
     @Override
-    public Security read(Security company) {
-        return company;
+    public Security read(String company) {
+        return this.comp.get(company);
     }
 }

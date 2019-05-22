@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.Assert.*;
 
@@ -21,14 +22,14 @@ public class SharesRepositoryImpTest {
 
     @Test
     public void getAll() {
-        List<Shares> company = this.comp.getAll();
+        Set<Shares> company = this.comp.getAll();
         Assert.assertEquals(0,company.size());
     }
 
     @Test
     public void create() {
         this.comp.create(null);
-        Assert.assertEquals(null, null);
+        //Assert.assertEquals(null, null);
     }
 
     @Test

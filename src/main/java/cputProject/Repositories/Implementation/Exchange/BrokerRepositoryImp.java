@@ -3,16 +3,19 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.BrokerRepository;
 import cputProject.domain.Exchange.Broker;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemorybr")
 public class BrokerRepositoryImp implements BrokerRepository {
     private static BrokerRepositoryImp repo = null;
-    private Set<Broker> comp;
+    private Map<String,Broker> comp;
 
     private BrokerRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static BrokerRepositoryImp getRepo(){
@@ -24,37 +27,32 @@ public class BrokerRepositoryImp implements BrokerRepository {
 
     @Override
     public Set<Broker> getAll() {
-        return this.comp;
+        Collection<Broker> students = this.comp.values();
+        Set<Broker> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Broker create(Broker company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public Broker update(Broker company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
 
-        for(Iterator<Broker> it = comp.iterator(); it.hasNext(); ){
-            Broker c = it.next();
-            if (c.equals(new Broker.Builder().fName(s)) || c.equals(new Broker.Builder().lName(s))){
-                this.comp.remove(c);
-            }
-        }
-
+        this.comp.remove(s);
     }
 
     @Override
-    public Broker read(Broker company) {
-        return company;
+    public Broker read(String company) {
+        return this.comp.get(company);
     }
 }

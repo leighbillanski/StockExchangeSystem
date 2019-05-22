@@ -3,16 +3,19 @@ package cputProject.Repositories.Implementation.Login;
 import cputProject.Repositories.Login.UserNameRepository;
 import cputProject.domain.Login.UserName;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemoryun")
 public class UserNameRepositoryImp implements UserNameRepository {
     private static UserNameRepositoryImp repo = null;
-    private Set<UserName> comp;
+    private Map<String,UserName> comp;
 
     private UserNameRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static UserNameRepositoryImp getRepo(){
@@ -24,37 +27,32 @@ public class UserNameRepositoryImp implements UserNameRepository {
 
     @Override
     public Set<UserName> getAll() {
-        return this.comp;
+        Collection<UserName> students = this.comp.values();
+        Set<UserName> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public UserName create(UserName company) {
-        this.comp.add(company);
+        this.comp.put(company.getUserId(),company);
         return company;
     }
 
     @Override
     public UserName update(UserName company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getUserId(),company);
+        return this.comp.get(company.getUserId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<UserName> it = comp.iterator(); it.hasNext(); ){
-            UserName c = it.next();
-            if (c.equals(new UserName.Builder().userName(s)) || c.equals(new UserName.Builder().userId(s))){
-                this.comp.remove(c);
-            }
-        }
-
+        this.comp.remove(s);
 
     }
 
     @Override
-    public UserName read(UserName company) {
-        return company;
+    public UserName read(String company) {
+        return this.comp.get(company);
     }
 }

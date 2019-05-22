@@ -3,14 +3,19 @@ package cputProject.Repositories.Implementation.Login;
 import cputProject.Repositories.Login.PasswordRepository;
 import cputProject.domain.Login.Password;
 
-import java.util.*;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemorypa")
 public class PasswordRepositoryImp implements PasswordRepository {
     private static PasswordRepositoryImp repo = null;
-    private Set<Password> comp;
+    private Map<String,Password> comp;
 
     private PasswordRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static PasswordRepositoryImp getRepo(){
@@ -22,37 +27,32 @@ public class PasswordRepositoryImp implements PasswordRepository {
 
     @Override
     public Set<Password> getAll() {
-        return this.comp;
+        Collection<Password> students = this.comp.values();
+        Set<Password> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Password create(Password company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public Password update(Password company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Password> it = comp.iterator(); it.hasNext(); ){
-            Password c = it.next();
-            if (c.equals(new Password.Builder().password(s))){
-                this.comp.remove(c);
-            }
-        }
-
+        this.comp.remove(s);
 
     }
 
     @Override
-    public Password read(Password company) {
-        return company;
+    public Password read(String company) {
+        return this.comp.get(company);
     }
 }

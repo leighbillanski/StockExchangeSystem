@@ -3,16 +3,19 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.BuyerRepository;
 import cputProject.domain.Exchange.Buyer;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemorybu")
 public class BuyerRepositoryImp implements BuyerRepository {
     private static BuyerRepositoryImp repo = null;
-    private Set<Buyer> comp;
+    private Map<String,Buyer> comp;
 
     private BuyerRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static BuyerRepositoryImp getRepo(){
@@ -24,36 +27,31 @@ public class BuyerRepositoryImp implements BuyerRepository {
 
     @Override
     public Set<Buyer> getAll() {
-        return this.comp;
+        Collection<Buyer> students = this.comp.values();
+        Set<Buyer> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Buyer create(Buyer company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public Buyer update(Buyer company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Buyer> it = comp.iterator(); it.hasNext(); ){
-            Buyer c = it.next();
-            if (c.equals(new Buyer.Builder().fName(s)) || c.equals(new Buyer.Builder().lName(s))){
-                this.comp.remove(c);
-            }
-        }
-
+        this.comp.remove(s);
     }
 
     @Override
-    public Buyer read(Buyer company) {
-        return company;
+    public Buyer read(String company) {
+        return this.comp.get(company);
     }
 }

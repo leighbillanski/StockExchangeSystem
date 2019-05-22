@@ -3,14 +3,19 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.TransactionRepository;
 import cputProject.domain.Exchange.Transaction;
 
-import java.util.*;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemoryt")
 public class TransactionRepositoryImp implements TransactionRepository {
     private static TransactionRepositoryImp repo = null;
-    private Set<Transaction> comp;
+    private Map<String,Transaction> comp;
 
     private TransactionRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static TransactionRepositoryImp getRepo(){
@@ -22,37 +27,33 @@ public class TransactionRepositoryImp implements TransactionRepository {
 
     @Override
     public Set<Transaction> getAll() {
-        return this.comp;
+        Collection<Transaction> students = this.comp.values();
+        Set<Transaction> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Transaction create(Transaction company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public Transaction update(Transaction company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Transaction> it = comp.iterator(); it.hasNext(); ){
-            Transaction c = it.next();
-            if (c.equals(new Transaction.Builder().desc(s))){
-                this.comp.remove(c);
-            }
-        }
+        this.comp.remove(s);
 
 
     }
 
     @Override
-    public Transaction read(Transaction company) {
-        return company;
+    public Transaction read(String company) {
+        return this.comp.get(company);
     }
 }

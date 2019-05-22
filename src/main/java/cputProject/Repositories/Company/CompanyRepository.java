@@ -7,5 +7,4 @@ import java.util.Set;
 
 public interface CompanyRepository extends Repository<Company, String> {
     Set<Company> getAll();
-
 }

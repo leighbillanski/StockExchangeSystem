@@ -3,16 +3,19 @@ package cputProject.Repositories.Implementation.Login;
 import cputProject.Repositories.Login.RetrievePasswordRepository;
 import cputProject.domain.Login.RetreivePassword;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemoryrp")
 public class RetrievePasswordRepositoryImp implements RetrievePasswordRepository {
     private static RetrievePasswordRepositoryImp repo = null;
-    private Set<RetreivePassword> comp;
+    private Map<String,RetreivePassword> comp;
 
     private RetrievePasswordRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static RetrievePasswordRepositoryImp getRepo(){
@@ -24,37 +27,32 @@ public class RetrievePasswordRepositoryImp implements RetrievePasswordRepository
 
     @Override
     public Set<RetreivePassword> getAll() {
-        return this.comp;
+        Collection<RetreivePassword> students = this.comp.values();
+        Set<RetreivePassword> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public RetreivePassword create(RetreivePassword company) {
-        this.comp.add(company);
+        this.comp.put(company.getOldPassword(),company);
         return company;
     }
 
     @Override
     public RetreivePassword update(RetreivePassword company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getOldPassword(),company);
+        return this.comp.get(company.getOldPassword());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<RetreivePassword> it = comp.iterator(); it.hasNext(); ){
-            RetreivePassword c = it.next();
-            if (c.equals(new RetreivePassword.Builder().newPassword(s)) || c.equals(new RetreivePassword.Builder().oldPassword(s))){
-                this.comp.remove(c);
-            }
-        }
-
+        this.comp.remove(s);
 
     }
 
     @Override
-    public RetreivePassword read(RetreivePassword company) {
-        return company;
+    public RetreivePassword read(String company) {
+        return this.comp.get(company);
     }
 }

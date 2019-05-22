@@ -2,15 +2,19 @@ package cputProject.Repositories.Implementation.Company;
 
 import cputProject.Repositories.Company.IndustryRepository;
 import cputProject.domain.Company.Industry;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
+@Repository("InMemoryi")
 public class IndustryRepositoryImp implements IndustryRepository {
     private static IndustryRepositoryImp repo = null;
-    private Set<Industry> comp;
+    private Map<String,Industry> comp;
 
     private IndustryRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static IndustryRepositoryImp getRepo(){
@@ -22,36 +26,33 @@ public class IndustryRepositoryImp implements IndustryRepository {
 
     @Override
     public Set<Industry> getAll() {
-        return this.comp;
+        Collection<Industry> students = this.comp.values();
+        Set<Industry> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Industry create(Industry company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public Industry update(Industry company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Industry> it = comp.iterator(); it.hasNext(); ){
-            Industry c = it.next();
-            if (c.equals(new Industry.Builder().type(s))){
-                this.comp.remove(c);
-            }
-        }
+        this.comp.remove(s);
 
     }
 
     @Override
-    public Industry read(Industry company) {
-        return company;
+    public Industry read(String company) {
+        return this.comp.get(company);
     }
+
 }

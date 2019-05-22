@@ -3,14 +3,19 @@ package cputProject.Repositories.Implementation.Login;
 import cputProject.Repositories.Login.EmailRepository;
 import cputProject.domain.Login.Email;
 
-import java.util.*;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemorye")
 public class EmailRepositoryImp implements EmailRepository {
     private static EmailRepositoryImp repo = null;
-    private Set<Email> comp;
+    private Map<String,Email> comp;
 
     private EmailRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static EmailRepositoryImp getRepo(){
@@ -22,37 +27,31 @@ public class EmailRepositoryImp implements EmailRepository {
 
     @Override
     public Set<Email> getAll() {
-        return this.comp;
+        Collection<Email> students = this.comp.values();
+        Set<Email> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Email create(Email company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public Email update(Email company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Email> it = comp.iterator(); it.hasNext(); ){
-            Email c = it.next();
-            if (c.equals(new Email.Builder().emailAddres(s))){
-                this.comp.remove(c);
-            }
-        }
-
-
+        this.comp.remove(s);
     }
 
     @Override
-    public Email read(Email company) {
-        return company;
+    public Email read(String  company) {
+        return this.comp.get(company);
     }
 }

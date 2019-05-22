@@ -3,14 +3,19 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.OrderRepository;
 import cputProject.domain.Exchange.Order;
 
-import java.util.*;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemoryo")
 public class OrderRepositoryImp implements OrderRepository {
     private static OrderRepositoryImp repo = null;
-    private Set<Order> comp;
+    private Map<String,Order> comp;
 
     private OrderRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static OrderRepositoryImp getRepo(){
@@ -22,36 +27,31 @@ public class OrderRepositoryImp implements OrderRepository {
 
     @Override
     public Set<Order> getAll() {
-        return this.comp;
+        Collection<Order> students = this.comp.values();
+        Set<Order> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Order create(Order company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public Order update(Order company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Order> it = comp.iterator(); it.hasNext(); ){
-            Order c = it.next();
-            if (c.equals(new Order.Builder().order(s))){
-                this.comp.remove(c);
-            }
-        }
-
+        this.comp.remove(s);
     }
 
     @Override
-    public Order read(Order company) {
-        return company;
+    public Order read(String company) {
+        return this.comp.get(company);
     }
 }

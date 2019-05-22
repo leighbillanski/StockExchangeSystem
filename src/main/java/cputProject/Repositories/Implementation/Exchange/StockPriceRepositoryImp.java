@@ -3,14 +3,19 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.StockPriceRepository;
 import cputProject.domain.Exchange.StockPrice;
 
-import java.util.*;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemorystp")
 public class StockPriceRepositoryImp implements StockPriceRepository {
     private static StockPriceRepositoryImp repo = null;
-    private Set<StockPrice> comp;
+    private Map<String,StockPrice> comp;
 
     private StockPriceRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static StockPriceRepositoryImp getRepo(){
@@ -22,37 +27,32 @@ public class StockPriceRepositoryImp implements StockPriceRepository {
 
     @Override
     public Set<StockPrice> getAll() {
-        return this.comp;
+        Collection<StockPrice> students = this.comp.values();
+        Set<StockPrice> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public StockPrice create(StockPrice company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public StockPrice update(StockPrice company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<StockPrice> it = comp.iterator(); it.hasNext(); ){
-            StockPrice c = it.next();
-            if (c.equals(new StockPrice.Builder().price(Double.parseDouble(s)))){
-                this.comp.remove(c);
-            }
-        }
-
+        this.comp.remove(s);
 
     }
 
     @Override
-    public StockPrice read(StockPrice company) {
-        return company;
+    public StockPrice read(String company) {
+        return this.comp.get(company);
     }
 }

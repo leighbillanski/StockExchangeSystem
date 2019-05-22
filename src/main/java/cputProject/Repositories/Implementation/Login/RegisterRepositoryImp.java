@@ -3,16 +3,19 @@ package cputProject.Repositories.Implementation.Login;
 import cputProject.Repositories.Login.RegisterRepository;
 import cputProject.domain.Login.Register;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemoryreg")
 public class RegisterRepositoryImp implements RegisterRepository {
     private static RegisterRepositoryImp repo = null;
-    private Set<Register> comp;
+    private Map<String,Register> comp;
 
     private RegisterRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static RegisterRepositoryImp getRepo(){
@@ -24,37 +27,31 @@ public class RegisterRepositoryImp implements RegisterRepository {
 
     @Override
     public Set<Register> getAll() {
-        return this.comp;
+        Collection<Register> students = this.comp.values();
+        Set<Register> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Register create(Register company) {
-        this.comp.add(company);
+        this.comp.put(company.getEmail(),company);
         return company;
     }
 
     @Override
     public Register update(Register company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getEmail(),company);
+        return this.comp.get(company.getEmail());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Register> it = comp.iterator(); it.hasNext(); ){
-            Register c = it.next();
-            if (c.equals(new Register.Builder().email(s))){
-                this.comp.remove(c);
-            }
-        }
-
-
+        this.comp.remove(s);
     }
 
     @Override
-    public Register read(Register company) {
-        return company;
+    public Register read(String company) {
+        return this.comp.get(company);
     }
 }

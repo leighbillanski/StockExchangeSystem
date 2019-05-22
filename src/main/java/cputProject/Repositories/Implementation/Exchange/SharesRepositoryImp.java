@@ -3,14 +3,19 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.SharesRepository;
 import cputProject.domain.Exchange.Shares;
 
-import java.util.*;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemorysh")
 public class SharesRepositoryImp implements SharesRepository {
     private static SharesRepositoryImp repo = null;
-    private Set<Shares> comp;
+    private Map<String,Shares> comp;
 
     private SharesRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static SharesRepositoryImp getRepo(){
@@ -22,37 +27,31 @@ public class SharesRepositoryImp implements SharesRepository {
 
     @Override
     public Set<Shares> getAll() {
-        return this.comp;
+        Collection<Shares> students = this.comp.values();
+        Set<Shares> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Shares create(Shares company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public Shares update(Shares company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Shares> it = comp.iterator(); it.hasNext(); ){
-            Shares c = it.next();
-            if (c.equals(new Shares.Builder().order(Double.parseDouble(s)))){
-                this.comp.remove(c);
-            }
-        }
-
-
+        this.comp.remove(s);
     }
 
     @Override
-    public Shares read(Shares company) {
-        return company;
+    public Shares read(String company) {
+        return this.comp.get(company);
     }
 }

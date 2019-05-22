@@ -3,16 +3,19 @@ package cputProject.Repositories.Implementation.Company;
 import cputProject.Repositories.Company.ProductRepository;
 import cputProject.domain.Company.Product;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemoryp")
 public class ProductRepositoryImp implements ProductRepository {
     private static ProductRepositoryImp repo = null;
-    private Set<Product> comp;
+    private Map<String,Product> comp;
 
     private ProductRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static ProductRepositoryImp getRepo(){
@@ -24,36 +27,31 @@ public class ProductRepositoryImp implements ProductRepository {
 
     @Override
     public Set<Product> getAll() {
-        return this.comp;
+        Collection<Product> students = this.comp.values();
+        Set<Product> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Product create(Product company) {
-        this.comp.add(company);
+        this.comp.put(company.getProductId(),company);
         return company;
     }
 
     @Override
     public Product update(Product company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getProductId(),company);
+        return this.comp.get(company.getProductId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Product> it = comp.iterator(); it.hasNext(); ){
-            Product c = it.next();
-            if (c.equals(new Product.Builder().productName(s))){
-                this.comp.remove(c);
-            }
-        }
-
+        this.comp.remove(s);
     }
 
     @Override
-    public Product read(Product company) {
-        return company;
+    public Product read(String company) {
+        return this.comp.get(company);
     }
 }

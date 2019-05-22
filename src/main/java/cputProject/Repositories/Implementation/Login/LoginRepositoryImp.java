@@ -3,14 +3,19 @@ package cputProject.Repositories.Implementation.Login;
 import cputProject.Repositories.Login.LoginRepository;
 import cputProject.domain.Login.Login;
 
-import java.util.*;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemoryl")
 public class LoginRepositoryImp implements LoginRepository {
     private static LoginRepositoryImp repo = null;
-    private Set<Login> comp;
+    private Map<String,Login> comp;
 
     private LoginRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static LoginRepositoryImp getRepo(){
@@ -22,37 +27,31 @@ public class LoginRepositoryImp implements LoginRepository {
 
     @Override
     public Set<Login> getAll() {
-        return this.comp;
+        Collection<Login> students = this.comp.values();
+        Set<Login> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Login create(Login company) {
-        this.comp.add(company);
+        this.comp.put(company.getId(),company);
         return company;
     }
 
     @Override
     public Login update(Login company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getId(),company);
+        return this.comp.get(company.getId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Login> it = comp.iterator(); it.hasNext(); ){
-            Login c = it.next();
-            if (c.equals(new Login.Builder().login(s))){
-                this.comp.remove(c);
-            }
-        }
-
-
+        this.comp.remove(s);
     }
 
     @Override
-    public Login read(Login company) {
-        return company;
+    public Login read(String company) {
+        return this.comp.get(company);
     }
 }

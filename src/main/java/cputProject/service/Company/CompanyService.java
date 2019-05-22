@@ -1,4 +1,11 @@
 package cputProject.service.Company;
 
-public interface CompanyService {
+import cputProject.domain.Company.Company;
+import cputProject.service.Service;
+
+
+import java.util.Set;
+
+public interface CompanyService extends Service<Company,String> {
+    Set<Company> getAll();
 }

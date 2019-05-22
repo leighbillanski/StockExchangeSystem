@@ -13,7 +13,7 @@ public class Company {
 
     }
 
-    private String getCompanyId(){return companyId;}
+    public String getCompanyId(){return companyId;}
 
     public String getName() {
         return name;

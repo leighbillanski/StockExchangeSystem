@@ -3,16 +3,19 @@ package cputProject.Repositories.Implementation.Exchange;
 import cputProject.Repositories.Exchange.StockRepository;
 import cputProject.domain.Exchange.Stock;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Repository("InMemoryst")
 public class StockRepositoryImp implements StockRepository {
     private static StockRepositoryImp repo = null;
-    private Set<Stock> comp;
+    private Map<String,Stock> comp;
 
     private StockRepositoryImp(){
-        this.comp = new HashSet<>();
+        this.comp = new HashMap<>();
     }
 
     public static StockRepositoryImp getRepo(){
@@ -24,37 +27,31 @@ public class StockRepositoryImp implements StockRepository {
 
     @Override
     public Set<Stock> getAll() {
-        return this.comp;
+        Collection<Stock> students = this.comp.values();
+        Set<Stock> set = new HashSet<>();
+        set.addAll(students);
+        return set;
     }
 
     @Override
     public Stock create(Stock company) {
-        this.comp.add(company);
+        this.comp.put(company.getStockId(),company);
         return company;
     }
 
     @Override
     public Stock update(Stock company) {
-        if(!company.equals(null)) {
-            return company;
-        }
-        return null;
+        this.comp.replace(company.getStockId(),company);
+        return this.comp.get(company.getStockId());
     }
 
     @Override
     public void delete(String s) {
-        for(Iterator<Stock> it = comp.iterator(); it.hasNext(); ){
-            Stock c = it.next();
-            if (c.equals(new Stock.Builder().stockId(s))){
-                this.comp.remove(c);
-            }
-        }
-
-
+        this.comp.remove(s);
     }
 
     @Override
-    public Stock read(Stock company) {
-        return company;
+    public Stock read(String company) {
+        return this.comp.get(company);
     }
 }

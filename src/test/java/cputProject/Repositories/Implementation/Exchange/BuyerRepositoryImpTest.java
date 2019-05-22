@@ -28,7 +28,7 @@ public class BuyerRepositoryImpTest {
     @Test
     public void create() {
         this.comp.create(null);
-        Assert.assertEquals(null, null);
+        //Assert.assertEquals(null, null);
     }
 
     @Test
