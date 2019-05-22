@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03a2bc95-1d5d-419a-be13-35d9f37504bd" name="Default Changelist" comment="" />
+    <list default="true" id="03a2bc95-1d5d-419a-be13-35d9f37504bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/cputProject/service/Implementation/Company/CompanyServiceImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cputProject/service/Implementation/Company/CompanyServiceImpTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,15 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/SecurityRepositoryImpTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Exchange/SellerRepositoryImpTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,11 +86,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cputProject/service/Implementation/Company/CompanyServiceImpTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding>
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Exchange/StockPriceServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Exchange/StockServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Exchange/StockSoldServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Exchange/TransactionServiceImp.java" />
@@ -170,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/RegisterRepositoryImpTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cputProject/Repositories/Implementation/Login/UserNameRepositoryImpTest.java" />
         <option value="$PROJECT_DIR$/src/Resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/cputProject/service/Implementation/Company/CompanyServiceImpTest.java" />
       </list>
     </option>
   </component>
@@ -238,6 +244,15 @@
               <item name="StockExchangeSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="StockExchangeSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cputProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StockExchangeSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StockExchangeSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -272,6 +287,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cputProject" type="462c0819:PsiDirectoryNode" />
               <item name="Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="Company" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,7 +297,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558505288293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558506351056" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -314,20 +330,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CountryRepositoryImpTest.create">
-    <configuration name="Class" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cputProject.Class" />
-      <module name="StockExchangeSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cputProject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CompanyServiceImpTest.create">
     <configuration name="CompanyRepositoryImpTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StockExchangeSystem" />
       <extension name="coverage">
@@ -359,6 +362,38 @@
       <option name="METHOD_NAME" value="getAll" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyServiceImpTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StockExchangeSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cputProject.service.Implementation.Company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cputProject.service.Implementation.Company" />
+      <option name="MAIN_CLASS_NAME" value="cputProject.service.Implementation.Company.CompanyServiceImpTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyServiceImpTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StockExchangeSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cputProject.service.Implementation.Company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cputProject.service.Implementation.Company" />
+      <option name="MAIN_CLASS_NAME" value="cputProject.service.Implementation.Company.CompanyServiceImpTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -395,29 +430,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderRepositoryImpTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StockExchangeSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cputProject.Repositories.Implementation.Exchange.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cputProject.Repositories.Implementation.Exchange" />
-      <option name="MAIN_CLASS_NAME" value="cputProject.Repositories.Implementation.Exchange.OrderRepositoryImpTest" />
-      <option name="METHOD_NAME" value="read" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CompanyServiceImpTest.create" />
+        <item itemvalue="JUnit.CompanyServiceImpTest.update" />
         <item itemvalue="JUnit.CountryRepositoryImpTest.create" />
         <item itemvalue="JUnit.CompanyRepositoryImpTest.create" />
         <item itemvalue="JUnit.OrderRepositoryImpTest.create" />
-        <item itemvalue="JUnit.OrderRepositoryImpTest.read" />
-        <item itemvalue="Application.Class" />
       </list>
     </recent_temporary>
   </component>
@@ -435,12 +454,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CompanyRepositoryImpTest_getAll - 2019.04.29 at 01h 07m 41s.xml">
-      <configuration name="CompanyRepositoryImpTest.getAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompanyRepositoryImpTest_create - 2019.05.22 at 06h 48m 18s.xml">
-      <configuration name="CompanyRepositoryImpTest.create" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CompanyRepositoryImpTest - 2019.05.22 at 06h 48m 40s.xml">
       <configuration name="CompanyRepositoryImpTest" configurationId="JUnit" />
     </history-entry>
@@ -465,10 +478,15 @@
     <history-entry file="CountryRepositoryImpTest_create - 2019.05.22 at 07h 50m 49s.xml">
       <configuration name="CountryRepositoryImpTest.create" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CompanyServiceImpTest_update - 2019.05.22 at 08h 25m 10s.xml">
+      <configuration name="CompanyServiceImpTest.update" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompanyServiceImpTest_create - 2019.05.22 at 08h 25m 58s.xml">
+      <configuration name="CompanyServiceImpTest.create" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -527,16 +545,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Login/PasswordServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cputProject/service/Implementation/Login/RegisterServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -911,6 +919,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cputProject/service/Implementation/Company/CompanyServiceImpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
